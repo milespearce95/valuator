@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/valuator.dir/link.d CMakeFiles/valuator.dir/src/main.cpp.o -o valuator
