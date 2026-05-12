@@ -5,12 +5,7 @@
 #include "Loan.hpp"
 #include "Cashflow.hpp"
 #include "LoanStochasticModel.hpp"
-
-enum class LoanState {
-    Active,
-    Prepaid,
-    Defaulted
-};
+#include "LoanStates.hpp"
 
 struct SimulationResult {
     std::vector<Cashflow> cashflows;

@@ -2,12 +2,6 @@
 
 #include <random>
 
-enum class LoanState {
-    Active,
-    Prepaid,
-    Defaulted
-};
-
 class LoanStochasticModel {
 private:
     double monthlyPrepayProb_;
