@@ -5,7 +5,7 @@
 #include "Loan.hpp"
 #include "Cashflow.hpp"
 
-class Valuator {
+class LoanEngine {
 private:
     static double monthlyRate(double annualRate) {
         return annualRate / 12.0;

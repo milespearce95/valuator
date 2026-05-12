@@ -1,12 +1,12 @@
 #include <iostream>
+#include "LoanEngine.hpp"
 #include "Loan.hpp"
-#include "Valuator.hpp"
 
 int main() {
     Loan loan(100000.0, 0.05, 12);
 
-    Valuator valuator;
-    auto schedule = valuator.buildSchedule(loan);
+    LoanEngine engine;
+    auto schedule = engine.buildSchedule(loan);
 
     std::cout << "Loan Amortization Schedule\n";
     std::cout << "--------------------------\n";

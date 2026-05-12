@@ -145,8 +145,7 @@ CMakeFiles/valuator.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
  /usr/include/c++/15.2.1/bits/istream.tcc \
- /home/miles/Projects/valuator/include/Loan.hpp \
- /home/miles/Projects/valuator/include/Valuator.hpp \
+ /home/miles/Projects/valuator/include/LoanEngine.hpp \
  /usr/include/c++/15.2.1/vector \
  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/15.2.1/bits/stl_vector.h \
@@ -171,4 +170,5 @@ CMakeFiles/valuator.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
+ /home/miles/Projects/valuator/include/Loan.hpp \
  /home/miles/Projects/valuator/include/Cashflow.hpp
