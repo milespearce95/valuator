@@ -4,7 +4,8 @@
 CMakeFiles/valuator.dir/src/main.cpp.o: /home/miles/Projects/valuator/src/main.cpp \
   /home/miles/Projects/valuator/include/Cashflow.hpp \
   /home/miles/Projects/valuator/include/Loan.hpp \
-  /home/miles/Projects/valuator/include/Valuator.hpp \
+  /home/miles/Projects/valuator/include/LoanEngine.hpp \
+  /home/miles/Projects/valuator/include/LoanValuator.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -328,8 +329,6 @@ valuator: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/tr1/exp_integral.tcc:
 
-/usr/include/c++/15.2.1/tr1/bessel_function.tcc:
-
 /usr/include/endian.h:
 
 /usr/include/c++/15.2.1/string_view:
@@ -408,8 +407,6 @@ valuator: /usr/lib/Scrt1.o \
 
 /usr/include/bits/types.h:
 
-/home/miles/Projects/valuator/include/Valuator.hpp:
-
 /usr/include/asm/errno.h:
 
 /usr/include/c++/15.2.1/type_traits:
@@ -429,8 +426,6 @@ valuator: /usr/lib/Scrt1.o \
 /usr/include/c++/15.2.1/system_error:
 
 /usr/include/c++/15.2.1/bits/new_allocator.h:
-
-/usr/include/bits/stdint-intn.h:
 
 /usr/include/bits/setjmp.h:
 
@@ -458,19 +453,33 @@ valuator: /usr/lib/Scrt1.o \
 
 /usr/include/bits/types/timer_t.h:
 
+/usr/include/c++/15.2.1/ostream:
+
+/usr/include/bits/libc-header-start.h:
+
 /usr/include/bits/floatn.h:
-
-/usr/include/bits/types/error_t.h:
-
-/usr/include/c++/15.2.1/bits/requires_hosted.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/errno-base.h:
 
 /usr/include/asm/types.h:
 
 /usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/15.2.1/bits/requires_hosted.h:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/c++/15.2.1/tr1/bessel_function.tcc:
+
+/home/miles/Projects/valuator/include/LoanValuator.hpp:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/c++/15.2.1/bits/ostream.tcc:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/stdc-predef.h:
 
@@ -546,10 +555,6 @@ valuator: /usr/lib/Scrt1.o \
 
 /usr/include/bits/typesizes.h:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/usr/include/c++/15.2.1/bits/ostream.tcc:
-
 /usr/include/features.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
@@ -578,10 +583,6 @@ valuator: /usr/lib/Scrt1.o \
 
 /usr/include/bits/errno.h:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/bits/types/__locale_t.h:
-
 /usr/include/bits/types/FILE.h:
 
 /usr/include/bits/flt-eval-method.h:
@@ -590,9 +591,9 @@ valuator: /usr/lib/Scrt1.o \
 
 /usr/include/bits/iscanonical.h:
 
-/usr/include/c++/15.2.1/ostream:
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/include/bits/types/__locale_t.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -689,6 +690,8 @@ CMakeFiles/valuator.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/charconv.h:
 
 /usr/include/time.h:
+
+/home/miles/Projects/valuator/include/LoanEngine.hpp:
 
 /usr/include/c++/15.2.1/bits/memory_resource.h:
 
