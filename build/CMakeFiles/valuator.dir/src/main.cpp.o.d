@@ -185,4 +185,17 @@ CMakeFiles/valuator.dir/src/main.cpp.o: \
  /home/miles/Projects/valuator/include/PortfolioMonteCarlo.hpp \
  /home/miles/Projects/valuator/include/StochasticLoanEngine.hpp \
  /home/miles/Projects/valuator/include/Cashflow.hpp \
- /home/miles/Projects/valuator/include/LoanStates.hpp
+ /home/miles/Projects/valuator/include/LoanStates.hpp \
+ /home/miles/Projects/valuator/include/CashflowAnalytics.hpp \
+ /home/miles/Projects/valuator/include/PortfolioAnalytics.hpp \
+ /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/bits/stl_algo.h \
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.2.1/bits/stl_heap.h \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /home/miles/Projects/valuator/include/CurveExporter.hpp \
+ /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/bits/codecvt.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/15.2.1/bits/fstream.tcc

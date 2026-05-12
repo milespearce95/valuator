@@ -1,42 +1,50 @@
 #include <iostream>
+
 #include "Loan.hpp"
 #include "LoanStochasticModel.hpp"
 #include "PortfolioMonteCarlo.hpp"
+#include "PortfolioAnalytics.hpp"
+#include "CurveExporter.hpp"
 
 int main() {
 
-    // 1. Define a loan contract
-    Loan loan(
-        100000.0,  // principal
-        0.05,      // annual interest rate
-        24         // term in months
-    );
+    Loan loan(100000, 0.05, 24);
 
-    // 2. Define stochastic behaviour
     LoanStochasticModel model(
-        0.01,  // 1% monthly prepayment probability
-        0.005  // 0.5% monthly default probability
+        0.01,   // prepay
+        0.005   // default
     );
 
-    // 3. Run Monte Carlo simulation
     PortfolioMonteCarlo mc;
+    PortfolioAnalytics analytics;
 
-    int simulations = 10000;
+    int sims = 10000;
     int horizon = 24;
 
-    auto result = mc.run(loan, model, simulations, horizon);
+    auto result = mc.run(loan, model, sims, horizon);
 
-    // 4. Output survival curve
-    std::cout << "Month | Survival | Default\n";
-    std::cout << "--------------------------\n";
+    
+    std::cout << "Survival / Default curves built\n";
+    CurveExporter exporter;
+    exporter.exportSurvival(result.survivalCurve, "survival.csv");
+    exporter.exportDefault(result.defaultCurve, "default.csv");
+    
+    auto summary = analytics.analyze(
+        result.irrDistribution,
+        result.pvDistribution
+    );
 
-    for (int i = 0; i < horizon; i++) {
 
-        std::cout
-            << (i + 1) << "     | "
-            << result.survivalCurve[i].survivalRate << "   | "
-            << result.defaultCurve[i].defaultRate << "\n";
-    }
+    std::cout << "\n=== Portfolio Analytics ===\n";
+
+    std::cout << "Mean IRR: " << summary.meanIRR << "\n";
+    std::cout << "IRR StdDev: " << summary.irrStdDev << "\n";
+
+    std::cout << "IRR P5:  " << summary.irrP5 << "\n";
+    std::cout << "IRR P50: " << summary.irrP50 << "\n";
+    std::cout << "IRR P95: " << summary.irrP95 << "\n";
+
+    std::cout << "Mean PV: " << summary.meanPV << "\n";
 
     return 0;
 }
